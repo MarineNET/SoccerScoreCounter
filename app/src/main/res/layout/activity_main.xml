@@ -14,108 +14,117 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="reset"
-        android:text="Reset Score"/>
+        android:text="Reset Score"
+        android:layout_marginBottom="16dp"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
 
-
-    <LinearLayout
-        android:id="@+id/teamA"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_weight="1">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:id="@+id/teamA"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="Team A"
-            />
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/teamAScore"
-            android:layout_width="match_parent"
+            <EditText
+                style="@style/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Team A"/>
+
+            <EditText
+                android:id="@+id/teamAScore"
+                style="@style/teamText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/teamAGoalButton"
+                style="@style/goalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goalA"
+                android:text="GOAL for Team A!"/>
+
+            <EditText
+                android:id="@+id/teamAFoul"
+                style="@style/teamText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/teamAFoulButton"
+                style="@style/foulButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="foulA"
+                android:text="Foul Team A"/>
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
+            android:background="@android:color/darker_gray">
+        </View>
+
+        <LinearLayout
+            android:id="@+id/teamB"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="0"
-            style="@style/editText"/>
+            android:layout_weight="1"
+            android:orientation="vertical"
+            >
 
-        <Button
-            android:id="@+id/teamAGoalButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="goalA"
-            android:text="GOAL for Team A!"
-            style="@style/goalButton"/>
+            <EditText
+                style="@style/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="Team B"/>
 
-        <EditText
-            android:id="@+id/teamAFoul"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="0"
-            style="@style/editText"/>
+            <EditText
+                android:id="@+id/teamBScore"
+                style="@style/teamText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="0"/>
 
-        <Button
-            android:id="@+id/teamAFoulButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="foulA"
-            android:text="Foul Team A"
-            style="@style/foulButton"/>
+            <Button
+                android:id="@+id/teamBGoalButton"
+                style="@style/goalButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="goalB"
+                android:text="GOAL for Team B!"/>
 
+            <EditText
+                android:id="@+id/teamBFoul"
+                style="@style/teamText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:text="0"/>
+
+            <Button
+                android:id="@+id/teamBFoulButton"
+                style="@style/foulButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="foulB"
+                android:text="Foul Team B"/>
+        </LinearLayout>
     </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/teamB"
-        android:layout_width="0dp"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical"
-        >
-
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Team B"/>
-
-        <EditText
-            android:id="@+id/teamBScore"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="0"
-            style="@style/editText"/>
-
-        <Button
-            android:id="@+id/teamBGoalButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="goalB"
-            android:text="GOAL for Team B!"
-            style="@style/goalButton"/>
-
-        <EditText
-            android:id="@+id/teamBFoul"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:text="0"
-            style="@style/editText"/>
-
-        <Button
-            android:id="@+id/teamBFoulButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:onClick="foulB"
-            android:text="Foul Team B"
-            style="@style/foulButton"/>
-    </LinearLayout>
-</LinearLayout>
 </RelativeLayout>
