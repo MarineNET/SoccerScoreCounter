@@ -32,38 +32,28 @@
 
             <EditText
                 style="@style/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:text="Team A"/>
 
             <TextView
                 android:id="@+id/teamAScore"
                 style="@style/teamText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="0"/>
 
             <Button
                 android:id="@+id/teamAGoalButton"
                 style="@style/goalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:onClick="goalA"
                 android:text="GOAL for Team A!"/>
 
             <TextView
                 android:id="@+id/teamAFoul"
                 style="@style/teamText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="0"/>
 
             <Button
                 android:id="@+id/teamAFoulButton"
                 style="@style/foulButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:onClick="foulA"
                 android:text="Foul Team A"/>
 
@@ -87,38 +77,28 @@
 
             <EditText
                 style="@style/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:text="Team B"/>
 
             <TextView
                 android:id="@+id/teamBScore"
                 style="@style/teamText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="0"/>
 
             <Button
                 android:id="@+id/teamBGoalButton"
                 style="@style/goalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:onClick="goalB"
                 android:text="GOAL for Team B!"/>
 
             <TextView
                 android:id="@+id/teamBFoul"
                 style="@style/teamText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:text="0"/>
 
             <Button
                 android:id="@+id/teamBFoulButton"
                 style="@style/foulButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:onClick="foulB"
                 android:text="Foul Team B"/>
         </LinearLayout>
