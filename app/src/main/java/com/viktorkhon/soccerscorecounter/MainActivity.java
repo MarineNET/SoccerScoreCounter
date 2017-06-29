@@ -57,4 +57,15 @@ public class MainActivity extends AppCompatActivity {
         foulsB++;
         displayTeamBFoul(foulsB);
     }
+
+    public void reset(View view) {
+        displayTeamA(0);
+        displayTeamAFoul(0);
+        displayTeamB(0);
+        displayTeamBFoul(0);
+        scoreA = 0;
+        scoreB = 0;
+        foulsA = 0;
+        foulsB = 0;
+    }
 }
